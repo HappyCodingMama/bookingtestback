@@ -25,7 +25,12 @@ mongoose.connection.on('disconnected', () => {
 });
 
 //middlwares
-app.use(cors());
+app.use(
+  cors({
+    origin: 'https://bookingtestback.onrender.com',
+  })
+);
+
 app.use(cookieParser());
 app.use(express.json());
 
