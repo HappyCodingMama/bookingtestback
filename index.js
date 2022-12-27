@@ -27,7 +27,7 @@ mongoose.connection.on('disconnected', () => {
 //middlwares
 app.use(
   cors({
-    origin: 'https://bookingtestback.onrender.com',
+    origin: 'https://bookingtestfront.onrender.com/',
   })
 );
 
